@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import '../style.css'
+import '../App.css'
 
 export default class ManagePage extends Component {
     render() {

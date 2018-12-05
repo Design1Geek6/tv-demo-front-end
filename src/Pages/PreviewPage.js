@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import '../style.css'
+import '../App.css'
 
 
-class App extends Component {
+export default class PreviewPage extends Component {
   render() {
     return (
       <div className="manage-page">
@@ -50,4 +50,3 @@ class App extends Component {
   }
 }
 
-export default App;

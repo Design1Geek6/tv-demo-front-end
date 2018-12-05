@@ -8,6 +8,20 @@
 </head>
 
 <body>
+    <script>
+        const clickedShow = function () {
+            console.log('show clicked');
+        }
+
+        const deleteShow = function () {
+            console.log('show deleted');
+        }
+
+        const clickedSubmit = function () {
+            console.log('submited');
+        }
+
+    </script>
 
     <header>
         <nav>
@@ -24,28 +38,12 @@
         <section class="show-selection">
             <h1 class="h1-shows">SHOWS</h1>
             <div class="show">
-                <button class="show-btn-1">The Walking Dead</button>
-                <button class="delete">-</button>
+                <button onClick="clickedShow()" class="show-btn-1">The Walking Dead</button>
+                <button onClick="deleteShow()" class="delete">-</button>
             </div>
             <div class="show">
-                <button class="show-btn-1">Arrow</button>
-                <button class="delete">-</button>
-            </div>
-            <div class="show">
-                <button class="show-btn-1">The Walking Dead</button>
-                <button class="delete">-</button>
-            </div>
-            <div class="show">
-                <button class="show-btn-1">Arrow</button>
-                <button class="delete">-</button>
-            </div>
-            <div class="show">
-                <button class="show-btn-1">The Walking Dead</button>
-                <button class="delete">-</button>
-            </div>
-            <div class="show">
-                <button class="show-btn-1">Arrow</button>
-                <button class="delete">-</button>
+                <button onClick="clickedShow()" class="show-btn-1">Arrow</button>
+                <button onClick="deleteShow()" class="delete">-</button>
             </div>
         </section>
 

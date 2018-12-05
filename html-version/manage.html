@@ -5,48 +5,49 @@
     <meta charset="UTF-8">
     <title>TV Demo</title>
     <link rel="stylesheet" href="css/style-1.css">
+    
 </head>
 
-<div>
+<body>
+    <script>
+        const clickedShow = function () {
+            console.log('show clicked');
+        }
+        
+        const deleteShow = function () {
+            console.log('show deleted');
+        }
 
-    <header>
-        <nav>
-            <div class="manage">
-                <a href="manage.html" class="link">Manage</a>
-            </div>
-            <div class="preview">
-                <a href="preview.html" class="link">Preview</a>
-            </div>
-        </nav>
-    </header>
-</div>
+         const clickedSubmit = function () {
+            console.log('submited');
+        }
+        
+    </script>
+
+    <div>
+
+        <header>
+            <nav>
+                <div class="manage">
+                    <a href="manage.html" class="link">Manage</a>
+                </div>
+                <div class="preview">
+                    <a href="preview.html" class="link">Preview</a>
+                </div>
+            </nav>
+        </header>
+    </div>
 
     <div class="manage-shows">
         <section class="show-selection">
             <h1 class="h1-shows">SHOWS</h1>
             <div class="show">
-                <button class="show-btn-1">The Walking Dead</button>
-                <button class="delete">-</button>
+                <button onClick="clickedShow()" class="show-btn-1">The Walking Dead</button>
+                <button onClick="deleteShow()" class="delete">-</button>
             </div>
             <div class="show">
-                <button class="show-btn-1">Arrow</button>
-                <button class="delete">-</button>
-            </div>
-            <div class="show">
-                <button class="show-btn-1">The Walking Dead</button>
-                <button class="delete">-</button>
-            </div>
-            <div class="show">
-                <button class="show-btn-1">Arrow</button>
-                <button class="delete">-</button>
-            </div>
-            <div class="show">
-                <button class="show-btn-1">The Walking Dead</button>
-                <button class="delete">-</button>
-            </div>
-            <div class="show">
-                <button class="show-btn-1">Arrow</button>
-                <button class="delete">-</button>
+                <button onClick="clickedShow()" class="show-btn-1">Arrow</button>
+                <button onClick="deleteShow()" class="delete">-</button>
             </div>
         </section>
 
@@ -67,10 +68,11 @@
                     <input class="show-inp" type="text" name="image" id="">
                 </div>
                 <div class="btn-submit">
-                    <input type="submit" value="Create/Update">
+                    <input onClick="clickedSubmit()" type="submit" value="Create/Update">
                 </div>
             </form>
         </section>
     </div>
+</body>
 
 </html>
