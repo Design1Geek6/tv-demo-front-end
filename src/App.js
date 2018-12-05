@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import './App.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import ManagePage from './Pages/ManagePage.js'
-import PreviewPage from './Pages/PreviewPage.js'
+import ManagePage from './Pages/ManagePage'
+import PreviewPage from './Pages/PreviewPage'
 
 class App extends Component {
   render() {
@@ -10,7 +9,7 @@ class App extends Component {
       <Router>
         <div className="app">
           <Switch>
-            <Route exact path='./' component={ManagePage} />
+            <Route exact path='/' component={ManagePage} />
             <Route path='/PreviewPage' component={PreviewPage} />
           </Switch>
         </div>

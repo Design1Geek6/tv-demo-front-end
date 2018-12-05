@@ -1,0 +1,154 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* header */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.manage{
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 25px 0px 50px 0px;
+    margin-top: 25px;
+}
+
+.preview{
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    padding: 25px 0px 50px 0px;
+    margin-top: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: dimgrey;
+    font-family: fantasy;
+    font-size: 75px;
+    
+}
+
+a:hover{
+    color: black;
+}
+
+
+/* Shows */
+
+.manage-shows{
+    display: flex;
+    
+}
+
+.show-selection{
+    min-width: 25%;
+    text-align: center;
+    border-right: 3px solid black;
+    padding: 25px 0px 50px 0px;
+    height: 100%;
+}
+
+.h1-shows{
+    letter-spacing: 3px;
+    color: dimgrey;
+    font-size: 50px;
+}
+
+.add-edit-show{
+    position: relative;
+    min-width: 75%;
+    padding: 25px 0px 50px 0px;
+}
+
+.show{
+    padding: 20px 0px 10px 0px;
+}
+
+.show-btn-1{
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: dimgrey;
+    font-family: fantasy;
+    font-size: 30px;
+    background-color: rgb(22, 22, 22);
+}
+
+.delete{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: dimgrey;
+    font-family: fantasy;
+    font-size: 30px;
+    background-color: rgb(22, 22, 22);
+}
+
+/* create/update shows */
+
+
+
+form{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    min-width: 25%;
+    padding: 25px 0px 50px 0px;
+    font-size: 25px;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+}
+.show-inp{
+    border:none;
+    border-bottom: 2px solid rgb(22, 22, 22);
+}
+
+.inp-name, .inp-rating, .inp-img{
+    padding-bottom: 25px;
+}
+
+/* show information */
+
+.show-preview{
+
+    min-width: 75%;
+    padding: 25px 0px 50px 0px;
+   text-align: center;
+}
+
+
+
+.title-rate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+h2{
+    padding: 0px 50px 25px 50px;
+}
+
+.poster{
+    margin-top: 50px;
+    height: 500px;  
+}
+
